@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/7e4938e866.js"></script>
+  <link rel="stylesheet" href="icomoon.css" />
+
+  <style>
+    #intro:before {
+      background: url("./images/parallax_bg3.jpg") no-repeat center center scroll;
+      -webkit-background-size: cover;
+      background-size: cover;
+      opacity: 0.4;
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    #intro p {
+      color: white;
+    }
+
+    #intro {
+      background-color: black;
+    }
+
+    #intro * {
+      z-index: 2;
+    }
+
+    @media (min-width: 992px){
+      #intro {
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+        margin: 0;
+        z-index: 1;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+      }
+
+      #content {
+        padding: 70px;
+      }
+      /*#content > .navbar {
+        margin-bottom: 40px;
+      }*/
+      #content > hr.separator {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .post {
+      position: relative;
+    }
+    .post h2 a {
+      color: black;
+    }
+
+    .post .permalink {
+      position: absolute;
+      left: -40px;
+      top: 4px;
+    }
+
+    .post .permalink a {
+      color: white;
+    }
+    .post .permalink a:hover {
+      color:#014c8c;
+    }
+
+    .aligncenter {
+      display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row" style="margin: 0;">
+    <div class="col-lg-3 col-xl-4" id="intro">
+      <div class="row align-items-center" style="height: 100%">
+        <div class="col text-center">
+          <img class="img-fluid" src="./images/hackforge_logo_white.png" />
+          <p class="lead">A Home for Windsor's Tech Community</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 offset-lg-3 col-xl-8 offset-xl-4" id="content">
+
+      <nav class="navbar navbar-toggleable-md navbar-light" style="background-color: none;">
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+          data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand mb-0 hidden-lg-up">Windsor Hackforge</h1>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Initiatives</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="fa fa-lg fa-facebook"></span>
+                <span class="hidden-lg-up">Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="fa fa-lg fa-twitter"></span>
+                <span class="hidden-lg-up">Twitter</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="fa-lg icon-Discord-Logo-Black"></span>
+                <span class="hidden-lg-up">Discord</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr class="separator" />
+      <article class="post" id="post-id-1">
+        <div class="permalink"><a href="#post-id-1"><span class="fa fa-link fa-2x"></span></a></div>
+        <h2><a href="#">Event Calendar: May 2017</a></h2>
+        <p class="lead pull-right"><a href="#">May 1, 2017</a></p>
+        <p class="lead">by <a href="#">Sarah Morris</a> in <a href="#">News</a></p>
+
+        <div class="post-content clear-block">
+          <p><img class="aligncenter wp-image-1622" src="http://hackf.org/wp-content/uploads/2017/04/happy-birthdayHackforge.png" alt="" width="607" height="228" srcset="http://hackf.org/wp-content/uploads/2017/04/happy-birthdayHackforge.png 784w, http://hackf.org/wp-content/uploads/2017/04/happy-birthdayHackforge-300x113.png 300w, http://hackf.org/wp-content/uploads/2017/04/happy-birthdayHackforge-768x289.png 768w" sizes="(max-width: 607px) 100vw, 607px" /></p>
+          <p>&nbsp;</p>
+          <p><strong>.NET Standard &amp; How Typos in Tables Helped Lead to Computers</strong><br />
+          <em>Tuesday, May 2: 6:30 PM</em></p>
+          <p>&#8220;.NET Standard&#8221; by Derek Comartin<br />
+          Creating class libraries? Learn about what the .NET Standard is and how it solves the code sharing problem for .NET developers. Ability to share code across all platforms by bringing all the APIs that you expect and love across the environments that you need: desktop applications, mobile apps &amp; games, and cloud services.</p>
+          <p>&#8220;How Typos in Tables Helped Lead to Computers&#8221; by John Haldeman<br />
+          In this talk we&#8217;ll put away our computers and learn about how people used to multiply large numbers together. We&#8217;ll then explore the problems with those methods and how it drove Charles Babbage, one of the fathers of modern computing, to develop his difference engine and other machines.</p>
+          <p><em>Thank you to Microsoft for providing Domino&#8217;s Pizza at this event.</em><br />
+          <a href="https://www.meetup.com/wenetdevelopers/events/239128329/">Meetup Event</a></p>
+          <p><strong>Open Coding Night</strong><br />
+          <em>Wednesday, May 10: 7:00 &#8211; 9:00 PM</em><br />
+          Have a project you’re working on? Need to bounce ideas off other programmers? Want to try out a tutorial for new programming language? From beginners to pros, Open Coding Night is designated time for you to hone your craft. Bring your laptop and get coding!<br />
+          <a href="https://www.facebook.com/events/607575512772011/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570063/">Meetup</a></p>
+          <p><strong>Board Game Night</strong><br />
+          <em>Friday, May 12: 7:00 &#8211; 10:00 PM</em><br />
+          Join us for a night of board games and card games from 7-10PM. If you’re new to board games, we encourage you to come by as we will have trusty Hackforgers there to help get you started. Bring your favourite game (that can be played in less than four hours)!<br />
+          <a href="https://www.facebook.com/events/1557433084291067/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570085/">Meetup</a></p>
+          <p><strong>Industrial Automation Club</strong><br />
+          <em>Monday, May 15: 7:00 PM</em><br />
+          Windsor&#8217;s biggest tech sector has a home at Hackforge! Come out to the inaugural meet of the Industrial Automation club and help set the direction. Whether wrangling PLCs and panels is your day job, or you&#8217;re just curious about how we make the machines that make the machines, this is the event for you.<br />
+          <a href="https://www.facebook.com/events/399977593719981/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239573380/">Meetup</a></p>
+          <p><strong>Repair the World: Games and Community Energy Plan</strong><br />
+          <em>Tuesday, May 16th: 7:00 PM</em><br />
+          At this meeting of Repair the World, we&#8217;re going to share what&#8217;s we&#8217;ve learned about Windsor&#8217;s Community Energy Plan. Then we&#8217;re going to explore the collective action potential of games. We&#8217;re going to talk about past games such as &#8216;World Without Oil&#8217; and &#8220;Future Coast&#8221; that invited players to imagine our future and then play with it. We&#8217;ll then do our own future-casting as we look at a game from a Hackforge member that&#8217;s currently under development.<br />
+          <a href="https://www.facebook.com/events/228355674315654/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570109/">Meetup</a></p>
+          <p><strong>Project Management Meetup: PMBOK &amp; Prince II</strong><br />
+          <em>Wednesday, May 17: 7:00 PM</em><br />
+          Join us for a high level talk on PMBOK &amp; PRINCE II, two popular project management methodologies and how they can work for you. We&#8217;re pleased to be joined by Elana Freeman, a Senior Project Manager at Thyssenkrupp Materials NA.</p>
+          <p>​This group is for all professionals from any industry, and business owners to come together and exchange ideas and good practices ​ in a fun and relaxed atmosphere.<br />
+          <a href="https://www.facebook.com/events/202627010232577/">Facebook </a>/ <a href="https://www.meetup.com/hackforge-windsor/events/238933883/">Meetup</a></p>
+          <p><strong>3D Printing Club: Intro to 3D Modelling Software</strong><br />
+          Saturday, May 20: 1:00 &#8211; 3:00 PM<br />
+          Come to Hackforge for a 3D printer showcase and an intro to 3D modelling software. Hackforge members will demonstrate their 3D printers and introduce three popular design programs: OnShape, Fusion 360, and FreeCAD. A great opportunity to learn where to begin in the wide world of 3D printing. We will investigate these kits and design programs further at the next meetup, so go ahead and bring your laptop if you would like to follow along.<br />
+          <a href="https://www.facebook.com/events/1186246728167590/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239635483/">Meetup</a></p>
+          <p><strong>Hackforge Open House</strong><br />
+          <em>Wednesday, May 24: 7:00 PM</em><br />
+          What is Hackforge??<br />
+          Come learn what Hackforge about Hackforge&#8217;s space, events, membership, and community. Drop in to check out our space, see some cool Hackforge projects, and meet our Member Reps.<br />
+          <a href="https://www.facebook.com/events/397001824026323/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239573406/">Meetup</a></p>
+          <p><strong>Hackforge Anniversary Party</strong><br />
+          <em>Saturday, May 27: 1:00 PM</em><br />
+          Hackforge was dreamt up in 2010 and became a registered non-profit in 2012. Let&#8217;s celebrate these milestones together. Details and surprises to come!<br />
+          <a href="https://www.facebook.com/events/865872146897708/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570128/">Meetup</a></p>
+          <p><strong>The Great Canadian Game Project May Meetup</strong><br />
+          <em>Sunday, May 28: 1:00 – 4:00 PM</em><br />
+          The game jam is on from February 1 to July 1! Participants have 150 days to conceive and create a game that is proudly Canadian!<br />
+          Drop by the monthly meetup to discuss your ideas, ask questions, watch tutorials from mentors to help you get started, find existing projects to join, see progress of other developers and more!<br />
+          More information to be updated at http://canada150game.ca/<br />
+          <a href="https://www.facebook.com/events/150254562177010/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570152/">Meetup</a></p>
+          <p><strong>Border City Data: A Gentle introduction to ETL</strong><br />
+          <em>Monday, May 29th: 7:00 PM</em><br />
+          ETL (“Extract, Transform, and Load”) is the commonly used name for the process of cleansing, moving and normalizing data for analysis. Join us for a beginner-friendly introduction to the tasks and tools involved in this process of adding value to data.<br />
+          <a href="https://www.facebook.com/events/516188802103907/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570177/">Meetup</a></p>
+          <p><strong>Book Club: Neal Stephenson’s Snow Crash (1992) pt. 2</strong><br />
+          <em>Tuesday, May 30th: 7:00 PM</em><br />
+          &#8220;In this dark and sinister age, America only has four things going for it: Movies, Music, Microcode (hacking), and High Speed Pizza Delivery.&#8221; We&#8217;re finishing Snow Crash! Join us for discussion on the end of this cyberpunk classic.<br />
+          <a href="https://www.facebook.com/events/2269490743276512/">Facebook</a> / <a href="https://www.meetup.com/hackforge-windsor/events/239570193/">Meetup</a></p>
+          <p>June Bookclub Pick: Infomocracy by Malka Ann Older https://www.goodreads.com/book/show/26114433-infomocracy</p>
+          <p><strong>Software Guild: Zombie Encryption</strong><br />
+          <em>Wednesday, May 31: 7:00 PM &#8211; 9:00 PM</em><br />
+          It&#8217;s the night of the living dead encryption talks at Hackforge. This session (which was cancelled in March &#8211; sorry) is back from the dead and hungry for the brains of fellow developers who need to keep secrets. Join John Haldeman and Randy Topliffe to gain an understanding of HTTPS and get some practical advice on how to encrypt your own websites with Let&#8217;s Encrypt. Please note that these talks have nothing to do with Zombies but we hope the clever marketing ploy works.<br />
+          <a href="https://www.facebook.com/events/379146119152699/">Facebook</a> / <a href="https://www.meetup.com/Windsor-Hackforges-Web-Software-Guild/events/239570236/">Meetup</a></p>
+        </div>
+      </article>
+      <hr class="separator" />
+      <article class="post" id="post-id-2">
+        <div class="permalink"><a href="#post-id-2"><span class="fa fa-link fa-2x"></span></a></div>
+        <h2><a href="#">How to Build A Better Tech Community</a></h2>
+        <p class="lead pull-right"><a href="#">March 27, 2017</a></p>
+        <p class="lead">by <a href="#">Sarah Morris</a> in <a href="#">Computer Girls</a>, <a href="#">Ontario Trillium Foundation</a></p>
+
+        <div class="post-content clear-block">
+          <p><img class="aligncenter wp-image-1583" src="http://hackf.org/wp-content/uploads/2017/03/How-To-Build-a-Better-Tech-Community.png" alt="" width="590" height="328" srcset="http://hackf.org/wp-content/uploads/2017/03/How-To-Build-a-Better-Tech-Community.png 810w, http://hackf.org/wp-content/uploads/2017/03/How-To-Build-a-Better-Tech-Community-300x167.png 300w, http://hackf.org/wp-content/uploads/2017/03/How-To-Build-a-Better-Tech-Community-768x427.png 768w" sizes="(max-width: 590px) 100vw, 590px" /></p>
+          <p>&nbsp;</p>
+          <p><strong>Thursday, March 30th,</strong> Hackforge welcomes <a href="http://techtowndetroit.org/press-release/techtown-names-marlin-williams-diversity-and-inclusion-entrepreneur-in-residence/">TechTown Detroit</a> Diversity and Inclusion Entrepreneur-In-Residence, Marlin Williams to speak and participate in How To Build a Better Tech Community. This free evening talk and panel discussion starts at 7:00PM at Hackforge (255 Ouellette) and will discuss practical steps companies and teams can make to improve diversity and inclusion.</p>
+          <p>Marlin Williams has over 20 years experience as a Global Diversity and Inclusion Officer for two Fortune 500 Organizations, professional speaker, STEM Advocate, and media contributor. She will be speaking on her experiences, building diverse teams and creating environments where all people feel included.</p>
+          <p>The panel discussion will feature Williams; Elana Freeman, a project manager for Thyssenkrupp; Lori Dunford, a local computer programmer, and Sarah Mushtaq, an MBA candidate at the Odette School of Business. Moderated by Hackforge Managing Director, Sarah Morris, the panel will focus on practical measures and policies that can improve the working situation for a diversity of people in tech.</p>
+          <p>This is the final event under the Computer Girls initiative, in partnership with Women&#8217;s Enterprise Skills Training INC. (WEST), funded by the Ontario Trillium Foundation. Join us after the panel discussion for a small reception for the program.</p>
+          <p><strong>Details of event:</strong><br />
+          <strong> How to Build a Better Tech Community</strong><br />
+          Date of event: Thursday, March 30th: 7:00 &#8211; 8:30PM<br />
+          Location: Hackforge (255 Ouellette, Windsor ON)<br />
+          Cost: Free<br />
+          <a href="https://www.eventbrite.ca/e/how-to-build-a-better-tech-community-ft-marlin-williams-tickets-33125780100">Register Here</a> // <a href="https://www.facebook.com/events/237862040017686/">Facebook Event</a></p>
+          <p>&nbsp;</p>
+          <p><img class="aligncenter wp-image-968" src="http://hackf.org/wp-content/uploads/2015/03/CG-logos.jpg" alt="" width="594" height="95" srcset="http://hackf.org/wp-content/uploads/2015/03/CG-logos.jpg 732w, http://hackf.org/wp-content/uploads/2015/03/CG-logos-300x47.jpg 300w" sizes="(max-width: 594px) 100vw, 594px" /></p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
