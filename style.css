@@ -78,6 +78,7 @@
   margin-right: auto;
   text-align: center;
   max-width: 100%;
+  height: auto;
 }
 
 .nav-link {
@@ -94,9 +95,14 @@
 }
 #newsletter .form-control {
   background-color: transparent;
-  color: #ccc;
-  border-color: #ccc;
+  color: #5bc0de;
+  border-color: #5bc0de;
 }
 #newsletter {
   margin: 15px;
+}
+
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
 }
