@@ -15,7 +15,7 @@ if ( have_posts() ) :
         <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
 
         <?php if (is_singular('post') || is_home()):
-            the_date('F j, Y', '<p class="lead pull-right">', '</p>');
+            the_date(null, '<p class="lead pull-right">', '</p>');
             $output = '<p class="lead">by <a href="' . get_the_author_link() . '">' . get_the_author() . '</a> in ';
             $categories = get_the_category();
             $separator = ', ';
@@ -36,6 +36,7 @@ if ( have_posts() ) :
     endwhile;
 
     the_posts_pagination( array(
+        'mid_size' => 2,
         'prev_text' => '<span class="fa fa-arrow-left"></span>' . '<span class="screen-reader-text">Previous page</span>',
         'next_text' => '<span class="screen-reader-text">Next page</span>' . '<span class="fa fa-arrow-right"></span>',
         'before_page_number' => '<span class="meta-nav screen-reader-text">Page </span>',

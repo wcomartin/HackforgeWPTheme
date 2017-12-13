@@ -1,3 +1,16 @@
+/*
+Theme Name: Hackforge
+Theme URI: https://github.com/wcomartin/HackforgeWPTheme
+Author: William Comartin
+Author URI: http://williamcomartin.com/
+Description: Hackforge Wordpress Theme
+Version: 1.1
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: hackforge
+Tags: hackforge
+*/
+
 #intro:before {
   background: url("./images/parallax_bg3.jpg") no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -72,7 +85,7 @@
   color:#014c8c;
 }
 
-.aligncenter {
+.aligncenter, .attachment-post-thumbnail {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -102,7 +115,31 @@
   margin: 15px;
 }
 
+#newsletter .nav .nav-link {
+  color: rgba(255,255,255,.7)
+}
+
+#newsletter .nav .nav-link:hover {
+  color: rgba(255,255,255,.9)
+}
+
 .navbar .dropdown-menu li {
   width: 100%;
   margin-left: 0 !important;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+nav.pagination .nav-links {
+  margin-left: auto;
+  margin-right: auto;
 }

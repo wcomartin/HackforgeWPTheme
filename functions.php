@@ -1,6 +1,12 @@
 <?php 
 
+add_theme_support( 'post-thumbnails' ); 
+
 require_once('wp-bootstrap-navwalker.php');
+require_once(dirname(__FILE__) . '/event-calendar/hfevent.php');
+require_once(dirname(__FILE__) . '/groups/hfgroups.php');
+require_once(dirname(__FILE__) . '/people/hfpeople.php');
+require_once(dirname(__FILE__) . '/members/hfmembers.php');
 
 function hf_enqueue_scripts() {
     // Scripts
