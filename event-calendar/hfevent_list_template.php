@@ -32,12 +32,18 @@ if ( $event_query->have_posts() ) :
     $count = 0;
     while ( $event_query->have_posts() ) : $event_query->the_post(); 
         $start_date_time = get_field("start_date_time");
-        if($start_date_time) $start_date = new DateTime($start_date_time);
+        if($start_date_time) {
+            $start_date = new DateTime();
+            $start_date->setTimestamp($start_date_time);
+        }
         else $start_date = null;
 
 
         $end_date_time = get_field("end_date_time");
-        if($end_date_time) $end_date = new DateTime($end_date_time);
+        if($end_date_time) {
+            $end_date = new DateTime();
+            $end_date->setTimestamp($end_date_time);
+        }
         else $end_date = null;
 
         if($count % 2 == 0 && $count > 0) echo "</div><div class='card-deck' style='margin-bottom: 30px'>";
